@@ -14,14 +14,14 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="#F14B4B"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_gravity="center_horizontal|center_vertical"
         >
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/img"
-            android:padding="10dp"
+            android:padding="5dp"
             android:src="@drawable/suitcases"/>
         <TextView
             android:layout_width="wrap_content"
