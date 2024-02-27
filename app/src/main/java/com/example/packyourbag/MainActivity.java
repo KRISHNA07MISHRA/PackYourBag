@@ -12,6 +12,7 @@ import com.example.packyourbag.constant.MyConstant;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,14 +26,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         recyclerView = findViewById(R.id.recyclerView);
 
         addAllimages();
         addAddTitles();
 
-        adapter  = new Adapter(this,images,title,this);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
+        adapter = new Adapter(this, images, title, this);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        gridLayoutManager.setOrientation(RecyclerView.VERTICAL);
 
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(adapter);
