@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="10sp"
     >
 
     <LinearLayout
@@ -14,22 +14,22 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="#F14B4B"
-        android:padding="5dp"
+        android:padding="5sp"
         android:layout_gravity="center_horizontal|center_vertical"
         >
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
             android:id="@+id/img"
-            android:padding="5dp"
-            android:src="@drawable/suitcases"/>
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:padding="5sp"
+            android:src="@drawable/suitcases" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title"
             android:text="Basic Needs"
             android:textColor="#0B0101"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:textStyle="bold"/>
 
 
